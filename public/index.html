@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MIJOCHI PORTAL</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="username-screen" class="bg-dark p-4">
+            <h1>nodejs chat</h1>
+            <p>Please enter your name</p>
+            <input id="inputMain" class="form-control  py-4 text-center mb-3" type="text" name="username" autofocus/>
+            <button id="enter-portal" class="btn btn-danger btn-outline-light">GO ON !!</button>
+           
+        </div>
+
+        <div id="chat" class="style-1 bg-primary">
+            <div id="output" class="bg-dark">
+
+            </div>
+            <div id="feedback"></div>
+        </div>
+
+
+        <div id="enter-message">
+            <input id="input-message" class="form-control p-3 mx-2" type="text" name="message" />
+            <button id="button-chat-room" class="btn btn-dark btn-outline-light mr-2">Send</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="/chat.js"></script>
+</body>
+
+</html>
